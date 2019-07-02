@@ -19,14 +19,13 @@ int main(void){
         cvnumber /= 10;
         ++count;
     }
-    for ( int i = 0 ; i<16 ; i++ ){
+    for ( int i = 0 ; i<count ; i++ ){
         creditarray[i] = creditnumber % 10 ;
         creditnumber = creditnumber / 10;
         creditcount[i] = creditarray[i];
         if( i%2 == 1){
             creditcount[i] = creditcount[i] * 2 ;
             sum += creditcount[i] % 10 + creditcount[i] % 100 / 10;
-            continue;
         }else if ( i%2 == 0 ){
             oddsum += creditcount[i];
         }

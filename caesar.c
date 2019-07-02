@@ -4,11 +4,12 @@
 
 int main(void){
 
-    char str[30] = "amber liu";
+    char str[] = "amber liu";
+
     printf("plaintext:");
-    // scanf("%c", str);
     printf("%s\n", str);
     printf("ciphertext:");
+    
     for ( int i = 0 ; i < strlen(str) ; i++ ){
         if (str[i] == ' ' ){
             printf(" ");
